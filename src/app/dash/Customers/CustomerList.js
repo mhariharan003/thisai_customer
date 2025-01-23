@@ -40,7 +40,7 @@ const CustomerList = () => {
       </li>
     ))}
   </ul>
-  <button className="h-[6%] px-[5%] py-[2%] text-white bg-[#902f01] rounded-xl flex items-center justify-center">
+  <button className="h-[6%] px-[5%] py-[2%] text-white bg-[#902f01] rounded-xl flex items-center justify-center mt-[190px]">
     <FaPlus style={{ fontSize: '24px', color: 'white' }} className="mr-[2%]" /> Create
   </button>
 </div>

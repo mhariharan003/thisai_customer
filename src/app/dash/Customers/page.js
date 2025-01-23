@@ -8,7 +8,7 @@ import BookingList from "./BookingList";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col h-screen bg-[#f3f3f3] p-[20px]">
+    <div className="flex-1 flex-col h-full bg-[#f3f3f3] p-[20px]">
         <Header/>
           <div className="flex gap-8">
               <Sidebar/>
