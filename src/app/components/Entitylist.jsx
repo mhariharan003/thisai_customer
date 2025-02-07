@@ -1,10 +1,9 @@
 import React from 'react';
 import { FaCrown, FaPlus, FaSearch } from 'react-icons/fa';
-// import Logo from '../assets/Frame1000002428.jpg';
 
 
 const customers = [
-  { name: 'Sujatha', phone: '9992057859', email: 'suja@gmail.com', selected: true },
+  { name: 'Sujatha', phone: '9992057859', email: 'suja@gmail.com', href:'/dash/Customers/CusDetails', selected: true },
   { name: 'Adhithya', phone: '9992857859', email: 'adhi@gmail.com', selected: false },
   { name: 'Ajay Krishna', phone: '9992857859', email: 'ak@gmail.com', selected: false },
   { name: 'Mukund', phone: '9992857859', email: 'mukundk@gmail.com', selected: false },
@@ -13,7 +12,7 @@ const customers = [
 
 const CustomerList = () => {
   return ( 
-    <div className="max-w-sm mx-auto w-80 h-[100%] px-4 py-4 bg-[#F1F4F7] rounded-[10px] flex flex-col gap-[2%] items-center m-[0]">
+    <div className="max-w-sm mx-auto w-[100%] h-[100%] px-4 py-4 bg-[#F1F4F7] rounded-[10px] flex flex-col md:w-[70%] gap-[2%] items-center m-[0]">
      <div className="flex items-center px-[6%] mb-[2%] h-[3rem] w-full bg-white">
     <FaSearch style={{color: '#111827',fontSize: '20px'}} />
     <input
@@ -43,7 +42,7 @@ const CustomerList = () => {
   <button className="h-[6%] px-[5%] py-[2%] text-white bg-[#902f01] rounded-xl flex items-center justify-center mt-[190px]">
     <FaPlus style={{ fontSize: '24px', color: 'white' }} className="mr-[2%]" /> Create
   </button>
-</div>
+  </div>
   )
 };
 

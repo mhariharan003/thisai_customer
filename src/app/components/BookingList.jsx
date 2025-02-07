@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaEye } from 'react-icons/fa';
-import CusDetails from './CusDetails';
+
 
 const bookings = [
-  { from: 'Chennai - 600028', to: 'US - 99950', type: 'Box', status: 'Delivered' },
+  { from: 'Chennai - 600028', to: 'US - 99950', type: 'Box', status: 'Delivered',  },
   { from: 'Chennai - 600028', to: 'US - 99950', type: 'Box', status: 'Delivered' },
   { from: 'Chennai - 600028', to: 'US - 99950', type: 'Envelope', status: 'Delivered' },
   { from: 'Chennai - 600028', to: 'US - 99950', type: 'Box', status: 'Delivered' },

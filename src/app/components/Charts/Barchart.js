@@ -40,7 +40,6 @@ const options = {
     },
  };
 
-//  w-[359px] h-[250px]
 
 return (
     <div className=" bg-white rounded-lg  shadow-custom-glow w-[360px] h-[100%] p-[10px] rounded-[9px] items-center" >
