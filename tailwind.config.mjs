@@ -7,10 +7,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        Inria: ['Inria Sans'],
+        Mono: ['Roboto Mono'],
+        Condensed: ['Roboto Condensed'],
+        Inter: ['Inter'],
+        Roboto: ['Roboto'],
+    },
     },
   },
   plugins: [],

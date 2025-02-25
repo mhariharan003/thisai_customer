@@ -10,19 +10,20 @@ const customers = [
   { name: 'Rajesh Kumar', phone: '9992857859', email: 'rk@gmail.com', selected: false },
 ];
 
-
 const EntityList = () => {
   return (
-    <div className="max-w-sm mx-auto lg:w-[70%] h-[100%] p-4 bg-[#F1F4F7] rounded-lg flex flex-col md:w-[50%] gap-4 items-center overflow-y-scroll no-scrollbar scroll-hidden overflow-hidden overflow-y-auto">
-      <div className="flex items-center px-4 mb-4 h-12 w-full bg-white rounded-md">
-        <FaSearch className="text-gray-700 text-xl mr-2" />
-        <input
-          type="text"
-          placeholder="Search Customer"
-          className="flex-grow p-2 outline-none rounded-md"
-        />
-      </div>
-      <ul className="entity w-full h-[800px] mb-[2%] flex flex-col gap-2 no-scrollbar">
+    <div className="relative flex flex-col max-w-sm mx-auto w-[100%] lg:w-[70%] h-[100%] p-4 bg-[#F1F4F7] rounded-lg md:w-[50%] gap-2 items-center no-scrollbar overflow-hidden overflow-y-auto">
+        <div className="absolute z-60 sticky top-0 flex items-center px-4 mb-4 h-12 w-full bg-white rounded-md">
+          <FaSearch className="text-gray-700 text-xl mr-2" />
+          <input
+            type="text"
+            placeholder="Search Customer"
+            className="flex-grow p-2 outline-none rounded-md"
+          />
+        </div>
+      
+      <div className='w-full overflow-y-auto no-scrollbar'>
+      <ul className="w-full h-[100%] mb-[2%] flex flex-col gap-2">
         {customers.map((customer, index) => (
           <li
             key={index}
@@ -40,7 +41,8 @@ const EntityList = () => {
           </li>
         ))}
       </ul>
-    </div>
+      </div>
+      </div>
   );
 };
 

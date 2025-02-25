@@ -19,7 +19,7 @@ function CombinedCharts() {
                         <FaDollarSign className="text-xl text-[#074E73]" />
                         </div>
                     </div>
-                    <button onClick={()=>setShowModal(true)} className="h-12 text-white px-[22px] py-4 bg-[#902f01] rounded-xl justify-end items-center gap-3 inline-flex">
+                    <button onClick={()=>setShowModal(true)} className="h-12 text-white px-[22px] py-4 bg-[#05324c] rounded-xl justify-end items-center gap-3 inline-flex">
                         <FaPlus style={{ fontSize: '18px', color: 'white' }}/> Create
                     </button>
                 </div>

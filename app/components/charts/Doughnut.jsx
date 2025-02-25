@@ -43,7 +43,7 @@ const options = {
 
 const DoughnutChart = () => {
   return (
-    <div className="flex flex-col w-full h-[300px] max-w-xs p-4 items-center rounded-lg shadow-[0px_0px_1.5px_0px_rgba(0,0,0,0.25)]">
+    <div className="flex flex-col w-[100%] h-[300px] max-w-xs p-4 items-center rounded-lg shadow-[0px_0px_1.5px_0px_rgba(0,0,0,0.25)]">
       <div className='flex inline-flex items-start gap-2'>
       <FaChartPie style={{ color: '#4c62b8', fontSize: '18px'}} />
       <h1 className="text-gray-900 font-semibold font-Condensed mb-4">Booking Graph</h1>

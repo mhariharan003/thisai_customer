@@ -3,12 +3,9 @@ import ProgressBar from './ProgressBar';
 import Overlay2 from './OverlayTwo';
 import { FaTimesCircle, FaCaretDown } from 'react-icons/fa';
 
-
-
 // !CreateCustomer
 function CreateCustomer({onclose}) {
   const [formData, setFormData] = useState({
-  
     nameFrom: '',
     phoneFrom: '',
     companyFrom: '',
@@ -32,9 +29,9 @@ function CreateCustomer({onclose}) {
   const steps = ['Address', 'Package', 'Carrier'];
   const [errors, setErrors] = useState({});
 
-  const handleNext = () => {  // Create a named handler function
-    if (validate()) {  // Only proceed if validation passes
-      setCurrentStep(1);  // Update the current step
+  const handleNext = () => { 
+    if (validate()) {
+      setCurrentStep(1);
     }
   };
 
@@ -59,7 +56,6 @@ function CreateCustomer({onclose}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      // Handle form submission
       console.log('Form submitted:', formData);
     }
   };
@@ -67,7 +63,6 @@ function CreateCustomer({onclose}) {
 function nextform(){
   return(
     <Overlay2/>
-
   )
 }
 

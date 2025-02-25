@@ -27,23 +27,23 @@ const ProgressBar = ({ steps, currentStep }) => {
           <div className="flex items-center">
             <div
               className={`rounded-full h-8 w-8 flex items-center justify-center 
-                ${index < currentStep ? 'bg-blue-500 text-white' : 'border-2 border-blue-500 text-blue-500'}
-                ${index === currentStep ? 'bg-blue-100' : ''}
+                ${index < currentStep ? 'bg-[#006fa9] text-white' : 'border-2 border-[#006fa9] text-blue-500'}
+                ${index === currentStep ? '' : ''}
               `}
             >
               {index < currentStep && <span className="text-white"><FaCheck/></span>}
-              {index === currentStep && <div className="rounded-full h-3 w-3 bg-blue-500"></div>}
+              {index === currentStep && <div className="rounded-full h-3 w-3 bg-[#006fa9]"></div>}
             </div>
             {index < steps.length - 1 && (
               <div className="h-1 bg-gray-300 w-[120px] relative">
                 <div 
-                  className="absolute top-0 left-0 h-full bg-blue-500"
-                  style={{ width: `${widths[index]}%` }}
+                  className="absolute top-0 left-0 h-full bg-[#006fa9]"
+                  style={{ width: `${widths[index]}%`}}
                 ></div>
               </div>
             )}
           </div>
-          <span className={`text-sm mt-2 ${index <= currentStep ? 'text-blue-500' : 'text-gray-500'}`}>
+          <span className={`text-[14px] font-medium mt-2 ${index <= currentStep ? 'text-[#006fa9]' : 'text-gray-500'}`}>
             {step}
           </span>
         </div>

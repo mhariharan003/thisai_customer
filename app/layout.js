@@ -10,11 +10,13 @@ export const metadata = {
 
 const Layout = ({ children }) => (
   <html lang="en">
-    <body className="transition-all duration-300 flex w-[100%] h-screen p-4 relative bg-[#f3f3f3] overflow-hidden overflow-y-auto">
-      <Sidebar className="md:hidden "/>
-      <div className="flex-1">
-        <Header />
-        <main>{children}</main>
+    <body >
+      <div className="relative flex w-[100%] h-screen p-4 relative bg-[#f3f3f3] overflow-hidden no-scrollbar overflow-y-auto">
+      <Sidebar className="bg-red-200"/>
+      <div className='w-[100%]'>
+        <Header className="h-[20%]"/>
+        <main className="flex h-[90%] w-[100%] bg-[#f3f3f3]">{children}</main>
+      </div>
       </div>
     </body>
   </html>
