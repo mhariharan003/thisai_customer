@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { FaUserCircle, FaBell } from 'react-icons/fa';
 
 function Header() {
@@ -9,7 +10,9 @@ function Header() {
         {/* ICONS */}
         <div className="flex items-center gap-4 pl-6">
         <FaBell className="bg-[015e8b] h-8 w-8" />
-        <FaUserCircle className="text-gray-400 h-8 w-8" />
+        <FaUserCircle
+            className="text-gray-400 h-8 w-8 cursor-pointer"
+          />
       </div>
     </div>
   )
